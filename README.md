@@ -58,7 +58,7 @@ It is built as a Maven project in Eclipse and focuses on simplicity, speed, and 
 - Last.fm → genre-based discovery and tagging
 
 🖥️ User Interaction
-The application operates entirely through a command-line interface.
+- The application operates entirely through a command-line interface.
 
 Users navigate through menus to:
 - Search for artists, songs, and albums
@@ -98,8 +98,7 @@ src/main/java
 pom.xml # Maven configuration
 ```
 ▶️ Example Usage
-
-
+```
 Search Artists by:
 1. Name
 2. Genre
@@ -126,6 +125,7 @@ Enter artist name: The Clash
 - From Here to Eternity (Live) [Remastered] (1999)
 - Raw and Unfiltered (1988-06-14)
 - Cut The Crap (1985-11-04)
+```
 
 ⚠️ Limitations
 
