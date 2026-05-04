@@ -74,20 +74,24 @@ src/main/java
 │
 ├── spotify/ # Spotify API integration
 │ ├── SpotifyArtist.java
-│ ├── SearchSong.java
-│ ├── SearchAlbum.java
+│ ├── SpotifySong.java
+│ ├── SpotifyAlbum.java
 │ └── SpotifyAuthManager.java
+│
 ├── last_fm/ # Last.fm API integration
 │ ├── LastFmArtist.java
 │ ├── LastFmSong.java
 │ └── LastFmAlbum.java
+│
 ├── options/ # Menu utilities & helpers
 │ ├── ArtistOptions.java
 │ ├── SongOptions.java
 │ ├── AlbumOptions.java
 │ └── DecadeMenu.java
-│ ├── excel/ # (Planned feature – not yet implemented)
-│ └── pom.xml # Maven configuration
+│
+└── excel/ # (Planned feature – not yet implemented)
+
+pom.xml # Maven configuration
 ```
 ▶️ Example Usage
 
