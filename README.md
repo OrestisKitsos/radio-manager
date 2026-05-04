@@ -26,7 +26,11 @@ It is built as a Maven project in Eclipse and focuses on simplicity, speed, and 
 🧩 System Functionality
 
 🎤 Artist Search
-- Search artists by name
+- Search artists by:
+  - Name
+  - Genre
+  - Decade
+  - Genre + Decade
 - Retrieve artist details and related metadata
 
 🎵 Song Search
@@ -65,70 +69,81 @@ Users navigate through menus to:
 ```
 src/main/java
 │
-├── Main.java # Entry point (main menu)
+├── Main.java # Application entry point (main menu)
 │
-├── api/ # Core application logic
-│ ├── SearchArtists.java
-│ ├── SearchSongs.java
-│ └── SearchAlbums.java
+├── api/
+│ ├── SearchArtists.java # Artist search workflows
+│ ├── SearchSongs.java # Song search workflows
+│ └── SearchAlbums.java # Album search workflows
 │
-├── spotify/ # Spotify API integration
-│ ├── SpotifyArtist.java
-│ ├── SpotifySong.java
-│ ├── SpotifyAlbum.java
-│ └── SpotifyAuthManager.java
+├── spotify/
+│ ├── SpotifyArtist.java # Spotify artist API calls
+│ ├── SpotifySong.java # Spotify track API calls
+│ ├── SpotifyAlbum.java # Spotify album API calls
+│ └── SpotifyAuthManager.java # Spotify authentication handler
 │
-├── last_fm/ # Last.fm API integration
-│ ├── LastFmArtist.java
-│ ├── LastFmSong.java
-│ └── LastFmAlbum.java
+├── last_fm/
+│ ├── LastFmArtist.java # Genre-based Artist search
+│ ├── LastFmSong.java # Genre-based Song search and Song metadata
+│ └── LastFmAlbum.java # Genre-based Album search and Album metadata
 │
-├── options/ # Menu utilities & helpers
-│ ├── ArtistOptions.java
-│ ├── SongOptions.java
-│ ├── AlbumOptions.java
-│ └── DecadeMenu.java
+├── options/
+│ ├── ArtistOptions.java # Artist menu options
+│ ├── SongOptions.java # Song menu options
+│ ├── AlbumOptions.java # Album menu options
+│ └── DecadeMenu.java # Decade selection utility
 │
-└── excel/ # (Planned feature – not yet implemented)
+└── excel/ # Planned feature: export favorites to Excel
 
 pom.xml # Maven configuration
 ```
 ▶️ Example Usage
 
 
-Search Songs by:
+Search Artists by:
+1. Name
+2. Genre
+3. Decade
+4. Genre + Decade
+0. Back
+Enter choice: 1
 
-Name
-Genre
-Decade
-Genre + Decade
-Album
-Back
+Enter artist name: The Clash
 
-Enter choice: 4
-Enter genres: metal
-Choose decade: 2000–2009
+🎤 Artist: The Clash
+🌍 Genres: [punk, punk rock, british, rock, classic rock, 70s, 80s, reggae, new wave, ska]
 
-🎯 Showing top tracks for metal artists from 2000–2009:
+🎶 Top Tracks:
+- Should I Stay or Should I Go - Remastered (1982)
+- Rock the Casbah - Remastered (1982)
+- London Calling - Remastered (1979)
+- Train in Vain (Stand by Me) - Remastered (1979)
+- I Fought the Law (2013)
 
-🎤 System of a Down
+🔥 Top Albums:
+- Combat Rock + The People's Hall (2022-05-20)
+- Live at Shea Stadium (Remastered) (2008)
+- From Here to Eternity (Live) [Remastered] (1999)
+- Raw and Unfiltered (1988-06-14)
+- Cut The Crap (1985-11-04)
 
-Chop Suey! (2001-09-04)
-Toxicity (2001-09-04)
-Aerials (2001-09-04)
+⚠️ Limitations
 
----
+- Search results depend on external APIs (Spotify & Last.fm), which may not always return complete or expected data.
+- Some searches (e.g., specific artist/song names) may not yield results due to API matching limitations.
+- Genre and decade combinations may occasionally return limited or no results, depending on available data.
+- Release dates may be missing for certain tracks due to incomplete metadata from the APIs.
 
 🚀 Future Improvements
 
 - Export favorite artists/songs/albums to Excel (playlist-like functionality)
 - Add user “favorites” system
-- Improve search accuracy and filtering
+- Improve search accuracy and result matching
+- Enhance genre and decade filtering reliability
+- Implement fallback mechanisms when API results are missing
+- Add caching to reduce API calls and improve performance
 - Develop a graphical user interface (GUI)
-- Add caching to reduce API calls
-- Support more music data sources
-
----
+- Support additional music data sources
 
 👤 Target Users
 
@@ -136,8 +151,6 @@ Aerials (2001-09-04)
 - DJs
 - Music enthusiasts
 - Content creators
-
----
 
 📜 License
 
