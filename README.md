@@ -62,6 +62,7 @@ Users navigate through menus to:
 - Select specific entries to view detailed information
 
 📂 Project Structure
+```
 src/main/java
 │
 ├── Main.java # Entry point (main menu)
@@ -87,7 +88,7 @@ src/main/java
 │ └── DecadeMenu.java
 │ ├── excel/ # (Planned feature – not yet implemented)
 │ └── pom.xml # Maven configuration
-
+```
 ▶️ Example Usage
 
 
