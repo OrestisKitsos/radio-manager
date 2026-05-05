@@ -25,3 +25,11 @@ replay_pid*
 
 # Env file
 .env
+
+# target
+target/
+
+# Eclipse files
+.settings/
+.classpath
+.project
