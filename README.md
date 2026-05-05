@@ -133,11 +133,12 @@ Enter artist name: The Clash
 - Some searches (e.g., specific artist/song names) may not yield results due to API matching limitations.
 - Genre and decade combinations may occasionally return limited or no results, depending on available data.
 - Release dates may be missing for certain tracks due to incomplete metadata from the APIs.
+- The application requires a stable internet connection.
 
 🚀 Future Improvements
 
-- Export favorite artists/songs/albums to Excel (playlist-like functionality)
-- Add user “favorites” system
+- Export favourite artists/songs/albums to Excel (playlist-like functionality)
+- Add user “favourites” system
 - Improve search accuracy and result matching
 - Enhance genre and decade filtering reliability
 - Implement fallback mechanisms when API results are missing
