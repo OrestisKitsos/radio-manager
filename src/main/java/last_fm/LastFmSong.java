@@ -5,11 +5,12 @@ import java.net.*;
 import java.util.*;
 import com.fasterxml.jackson.databind.*;
 import com.fasterxml.jackson.databind.node.*;
+import io.github.cdimascio.dotenv.Dotenv;
 
 public class LastFmSong {
-
-    private static final String API_KEY = "958ae828c6ccebb1a6568ed258ea4a62";
-    private static final String API_URL = "http://ws.audioscrobbler.com/2.0/";
+    private static final Dotenv dotenv = Dotenv.load();
+    private static final String API_KEY = dotenv.get("LASTFM_API_KEY");
+	private static final String API_URL = "http://ws.audioscrobbler.com/2.0/";
 
     private static JsonNode getResponse(String url) throws Exception {
         URI uri = URI.create(url);
