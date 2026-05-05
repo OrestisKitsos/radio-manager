@@ -100,20 +100,20 @@ pom.xml # Maven configuration
 
 ▶️ How to Run
 
-1. Clone the repository
+1. Clone the repository:
 
    - git clone https://github.com/OrestisKitsos/radio-manager.git
    - cd radio-manager
 
 2. Create a .env file in the root directory
 
-3. Create your API credentials
+3. Create your API credentials:
 
   - Spotify: https://developer.spotify.com/dashboard/
 
   - Last.fm: https://www.last.fm/api/account/create
 
-4. Add your credentials to the .env file
+4. Add your credentials to the .env file:
 
   - SPOTIFY_CLIENT_ID=your_client_id
 
@@ -121,11 +121,11 @@ pom.xml # Maven configuration
 
   - LASTFM_API_KEY=your_api_key
 
-5. Build the project
+5. Build the project:
 
    - mvn clean install
 
-6. Run the application
+6. Run the application:
 
    - mvn exec:java
 
