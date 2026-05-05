@@ -97,6 +97,7 @@ src/main/java
 
 pom.xml # Maven configuration
 ```
+
 ▶️ How to Run
 
 1. Clone the repository
@@ -120,6 +121,7 @@ pom.xml # Maven configuration
    - mvn exec:java
 
    (or run Main.java directly from your IDE)
+
 
 ▶️ Example Usage
 ```
