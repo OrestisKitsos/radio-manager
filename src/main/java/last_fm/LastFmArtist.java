@@ -12,6 +12,12 @@ public class LastFmArtist {
     private static final String API_KEY = dotenv.get("LASTFM_API_KEY");
 	private static final String API_URL = "http://ws.audioscrobbler.com/2.0/";
 
+	static {
+	    if (API_KEY == null || API_KEY.isEmpty()) {
+	        throw new RuntimeException("Missing LASTFM_API_KEY in .env file.");
+	    }
+	}
+	
     private static JsonNode getResponse(String url) throws Exception {
     	URI uri = URI.create(url);
     	HttpURLConnection conn = (HttpURLConnection) uri.toURL().openConnection();
