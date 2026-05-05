@@ -107,11 +107,13 @@ pom.xml # Maven configuration
 
 2. Create a .env file in the root directory
 
+
 3. Create your API credentials:
 
   - Spotify: https://developer.spotify.com/dashboard/
 
   - Last.fm: https://www.last.fm/api/account/create
+
 
 4. Add your credentials to the .env file:
 
@@ -121,9 +123,11 @@ pom.xml # Maven configuration
 
   - LASTFM_API_KEY=your_api_key
 
+
 5. Build the project:
 
    - mvn clean install
+
 
 6. Run the application:
 
