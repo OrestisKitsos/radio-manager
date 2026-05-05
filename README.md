@@ -93,10 +93,34 @@ src/main/java
 │ ├── AlbumOptions.java # Album menu options
 │ └── DecadeMenu.java # Decade selection utility
 │
-└── excel/ # Planned feature: export favorites to Excel
+└── excel/ # Planned feature: export favourites to Excel
 
 pom.xml # Maven configuration
 ```
+▶️ How to Run
+
+1. Clone the repository
+
+   - git clone https://github.com/OrestisKitsos/radio-manager.git
+   - cd radio-manager
+
+2. Create a .env file in the root directory
+
+   Add your API credentials:
+   - spotify_client_id
+   - spotify_client_secret
+   - lastfm_api_key
+
+3. Build the project
+
+   - mvn clean install
+
+4. Run the application
+
+   - mvn exec:java
+
+   (or run Main.java directly from your IDE)
+
 ▶️ Example Usage
 ```
 Search Artists by:
