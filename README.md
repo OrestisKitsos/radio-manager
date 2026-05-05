@@ -109,7 +109,7 @@ pom.xml # Maven configuration
 
 3. Create your API credentials:
 
-  - Spotify: https://developer.spotify.com/dashboard/
+  - spotify: https://developer.spotify.com/dashboard/
 
   - Last.fm: https://www.last.fm/api/account/create
 
