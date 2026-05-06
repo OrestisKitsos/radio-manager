@@ -45,7 +45,7 @@
 
              int responseCode = conn.getResponseCode();
              if (responseCode != 200) {
-                 System.err.println("❌ Spotify Auth failed! HTTP " + responseCode);
+                 System.err.println("Spotify Auth failed! HTTP " + responseCode);
                  try (BufferedReader err = new BufferedReader(new InputStreamReader(conn.getErrorStream()))) {
                      err.lines().forEach(System.err::println);
                  }
