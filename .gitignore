@@ -26,7 +26,7 @@ replay_pid*
 # Env file
 .env
 
-# target
+# Maven
 target/
 
 # Eclipse files
