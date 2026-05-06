@@ -109,7 +109,7 @@ pom.xml # Maven configuration
 
 3. Create your API credentials:
   
-- Spotify: https://developer.spotify.com/dashboard/
+   - git clone https://github.com/OrestisKitsos/radio-manager.git
 - Last.fm: https://www.last.fm/api/account/create
 
 4. Add your credentials to the .env file:
