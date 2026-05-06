@@ -1,4 +1,5 @@
 🎧 Radio Manager  
+
 A CLI tool for fast music discovery using Spotify and Last.fm APIs.
 
 📌 Overview
